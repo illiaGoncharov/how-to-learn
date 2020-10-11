@@ -1,31 +1,332 @@
+*,
+body,
+div,
+h1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Изменения вижу только в футере и в фейнмане. Не совсем понимаю, что этот стиль меняет в этих случаях, но мне нравится так больше (фейман компактнее без потери эффекта с цветом и формой, футер тоже компактней. Исчезает высота, но если с фенманом додумать можно - с футером не въехал :P) */
+}
+
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family:  Arial, 'Helvetica Neue', sans-serif;
+  /* В брифе явно Arial и мне лично он больше нрав. в контексте такого лендинга. Если это важно, в след. пуше сделаю Helvetica приоритетным. btw Название шрифта должно быть в кавычках? В инспекторе все валидируется вроже и так и так */
+}
+
+.logo {
+  height: 32px;
+  width: 183px;
+}
+
+.logo__place_header {
+  position: absolute;
+  top: 30px;
+  left: 65px;
+  z-index: 999;
 }
 
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background: #f2f2f2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__title {
+  display: flex;
+  align-items: center;
+  width: 730px;
+  height: 100%;
+  margin-left: 64px;
+  color: #000;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+}
+
+.header__sub-title {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 608px;
+  width: 765px;
+  z-index: 999;
+}
+
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background: #2f80ed;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.description {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.two-columns__paragraph:nth-child(2) {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.digits {
+  margin-bottom: 100px;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+}
+
+.table_theme_dark {}
+
+.section__title {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section__title_theme_dark {
+  font-size: 60px;
+  color: #fff;
+}
+
+.section__sub-title {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section__sub-title_theme_dark {
+  color: #fff;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.table__cell {
+  list-style: none;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__cell_theme_dark {
+  margin-top: 80px;
+  width: 200px;
+  color: #fff;
+  z-index: 2;
+}
+
+.table__heading {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.table__text:nth-child(odd) {
+ margin-top: 20px;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feinman {
+  position: relative;
+  height: 790px;
+  padding-top: 100px;
+}
+
+.feinman__title {
+  width: 648px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 999;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.feinman__sub-title {
+  position: relative;
+  z-index: 999;
+  margin: 70px auto auto 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+
+.feinman__link {
+  position: relative;
+  z-index: 999;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  color: #2f80ed;
+  text-decoration: none;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+.feinman__illustration {
+  width: 867px;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.kaufman {
+  position: relative;
+  background: #1f1f1f;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  right: -150px;
+  top: -50px;
+}
+
+.footer {
+  position: relative;
+  min-height: 350px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer__column-links {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+
