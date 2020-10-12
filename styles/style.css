@@ -1,12 +1,14 @@
-*,
+/**,
 body,
 div,
 h1 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Изменения вижу только в футере и в фейнмане. Не совсем понимаю, что этот стиль меняет в этих случаях, но мне нравится так больше (фейман компактнее без потери эффекта с цветом и формой, футер тоже компактней. Исчезает высота, но если с фенманом додумать можно - с футером не въехал :P) */
-}
+}*/
+
+/*Изменения вижу только в футере и в фейнмане. Не совсем понимаю, что этот стиль меняет в этих случаях, но мне нравится так больше (фейман компактнее без потери эффекта с цветом и формой, футер тоже компактней. Исчезает высота, но если с фенманом додумать можно - с футером не въехал :P)
+*/
 
 .page {
   min-width: 1100px;
@@ -21,7 +23,7 @@ h1 {
   width: 183px;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 65px;
@@ -30,6 +32,7 @@ h1 {
 
 .header {
   position: relative;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -37,18 +40,20 @@ h1 {
 }
 
 .header__title {
-  display: flex;
+  position: relative;
+  align-self: center;
   align-items: center;
   width: 730px;
-  height: 100%;
+  margin-top: 0;
   margin-left: 64px;
   color: #000;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
+  z-index: 1999;
 }
 
-.header__sub-title {
+.header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -56,6 +61,13 @@ h1 {
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  z-index: 1999;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  z-index: 1999;
 }
 
 .header__main-illustration {
@@ -90,6 +102,7 @@ h1 {
 
 .two-columns__brief {
   width: 175px;
+  margin-top: 0;
   color: #2f80ed;
   font-size: 18px;
   font-weight: normal;
@@ -102,6 +115,10 @@ h1 {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
+}
+
+.two-columns__paragraph {
+   margin: 0;
 }
 
 .two-columns__paragraph:nth-child(2) {
@@ -126,9 +143,7 @@ h1 {
   margin: auto;
 }
 
-.table_theme_dark {}
-
-.section__title {
+.section-title {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -138,26 +153,21 @@ h1 {
   text-align: center;
 }
 
-.section__title_theme_dark {
-  font-size: 60px;
+.section-title_theme_dark {
   color: #fff;
 }
 
-.section__sub-title {
+.section-subtitle {
   width: 60%;
   margin: 0 auto;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   text-align: center;
-  margin-bottom: 60px;
 }
 
-.section__sub-title_theme_dark {
+.section-subtitle_theme_dark {
   color: #fff;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   z-index: 2;
   margin-bottom: 0;
 }
@@ -196,33 +206,32 @@ h1 {
   margin-top: 20px;
 }
 
-.table__text:nth-child(odd) {
-  margin-top: 20px;
-}
-
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.feinman {
+.feynman {
+  box-sizing: border-box;
+  background: #f2f2f2;
   position: relative;
-  height: 790px;
+  min-height: 790px;
   padding-top: 100px;
 }
 
-.feinman__title {
+.feynman__title {
   width: 648px;
   margin: 0 auto;
   position: relative;
   z-index: 999;
   font-size: 120px;
+  text-align: center;
   font-weight: bold;
   line-height: 1.15;
 }
 
-.feinman__sub-title {
+.feynman__subtitle {
   position: relative;
   z-index: 999;
   margin: 70px auto auto 0;
@@ -232,7 +241,7 @@ h1 {
   line-height: 51px;
 }
 
-.feinman__link {
+.feynman__link {
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
@@ -244,7 +253,7 @@ h1 {
   z-index: 999;
 }
 
-.feinman__illustration {
+.feynman__illustration {
   width: 867px;
   position: absolute;
   z-index: 0;
@@ -265,8 +274,9 @@ h1 {
   width: 877px;
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
-  right: -150px;
-  top: -50px;
+  background-size: contain;
+  right: -250px;
+  top: -25px;
 }
 
 .footer {
@@ -274,6 +284,7 @@ h1 {
   min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   background-color: #1f1f1f;
@@ -300,6 +311,8 @@ h1 {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
 .footer__column-heading {
@@ -310,6 +323,8 @@ h1 {
 }
 
 .footer__column-links {
+  margin: 0;
+  margin-bottom: 16px;
   list-style: none;
   text-decoration: none;
   color: #fff;
