@@ -131,6 +131,8 @@
 }
 
 .section-title {
+  position: relative;
+  z-index: 999; /* Про перекрытый текст понял только сейчас, что имелось ввиду */
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
