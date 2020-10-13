@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .logo {
@@ -31,7 +31,6 @@
   align-self: center;
   align-items: center;
   width: 730px;
-  margin-top: 0;
   margin-left: 64px;
   color: #000;
   font-size: 102px;
@@ -125,6 +124,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0;
   justify-content: space-between;
   width: 1100px;
   margin: auto;
@@ -262,8 +262,8 @@
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
   background-size: contain;
-  right: -250px;
-  top: -25px;
+  right: -210px;
+  top: 0;
 }
 
 .footer {
@@ -306,12 +306,14 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
 .footer__column-links {
   margin: 0;
   margin-bottom: 16px;
+  padding-left: 0px;
   list-style: none;
   text-decoration: none;
   color: #fff;
