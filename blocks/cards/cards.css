@@ -1,8 +1,8 @@
 .cards {
-  justify-content: start;
+  width: 920px;
   list-style: none;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  justify-content: flex-start;
 }
 
 

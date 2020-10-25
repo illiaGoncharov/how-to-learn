@@ -1,4 +1,7 @@
 .header__title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
   position: relative;
   align-self: center;
   align-items: center;

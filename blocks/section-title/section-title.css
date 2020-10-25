@@ -1,6 +1,8 @@
 .section-title {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
   position: relative;
-  z-index: 999; /* Про перекрытый текст понял только сейчас, что имелось ввиду */
+  z-index: 999;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -8,5 +10,5 @@
   font-weight: bold;
   line-height: 1.15;
   text-align: center;
-  min-width: 920px;
+  /*min-width: 920px;*/
 }

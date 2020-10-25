@@ -1,12 +1,10 @@
-.two-columns__brief {
+.khan__author {
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  width: 175px;
-  margin-top: 0;
-  color: #2f80ed;
-  font-size: 18px;
+  font-size: 30px;
+  line-height: 42px;
   font-weight: normal;
-  line-height: 1.2;
+  margin: 0;
 }

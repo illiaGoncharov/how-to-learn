@@ -1,4 +1,11 @@
 .cards__item {
   width: 240px;
-  margin: 0px 0px 0px 100px;
+}
+
+.cards__item {
+  margin-right: 100px;
+}
+
+.cards__item:nth-child(3n+3) {
+  margin-right: 0px;
 }
