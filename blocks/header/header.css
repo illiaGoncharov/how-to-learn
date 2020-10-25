@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  overflow: hidden; /*Фиксим баг от крутящегося квадрата*/
   display: flex;
   height: 100vh;
   min-height: 600px;

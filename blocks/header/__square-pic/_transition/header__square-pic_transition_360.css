@@ -1,0 +1,9 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__square-pic_transition_360 {
+  animation: rotate 20s linear infinite;
+}
