@@ -1,6 +1,6 @@
 @import url("../vendor/normalize.css");
 
-@import url("../blocks/root/root.css");
+@import url("../blocks/page/page.css");
 
 @import url("../blocks/section-title/section-title.css");
 @import url("../blocks/section-title/_theme/section-title_theme_dark.css");
@@ -84,5 +84,5 @@
 @import url("../blocks/resources/__logo-zone/resources__logo-zone.css");
 @import url("../blocks/resources/__logo/resources__logo.css");
 
-@import url("../blocks/root/__link/root__link_transition_opacity.css");
-@import url("../blocks/rotation/rotation_360.css");
+@import url("../blocks/link/link_transition_opacity.css");
+@import url("../blocks/rotation/rotation.css");

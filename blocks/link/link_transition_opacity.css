@@ -1,4 +1,4 @@
-.root__link_transition_opacity {
+.link_transition_opacity {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -6,6 +6,6 @@
 }
 
 
-.root__link_transition_opacity:hover {
+.link_transition_opacity:hover {
   opacity: .65;
 }

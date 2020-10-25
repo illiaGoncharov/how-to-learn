@@ -4,6 +4,6 @@
   }
 }
 
-.rotation_360 {
+.rotation {
   animation: rotate 20s linear infinite;
 }
