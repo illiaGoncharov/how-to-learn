@@ -18,7 +18,7 @@
 @import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/header/__main-illustration/header__main-illustration.css");
 @import url("../blocks/header/__square-pic/header__square-pic.css");
-@import url("../blocks/header/__square-pic/_transition/header__square-pic_transition_360.css");
+/*@import url("../blocks/header/__square-pic/_transition/header__square-pic_transition_360.css");*/
 
 @import url("../blocks/description/description.css");
 
@@ -57,4 +57,13 @@
 @import url("../blocks/footer/__column-link/footer__column-link.css");
 @import url("../blocks/footer/__social-icon/footer__social-icon.css");
 
+
+@import url("../blocks/techniques/techniques.css");
+@import url("../blocks/cards/cards.css");
+@import url("../blocks/cards/__image/cards__image.css");
+@import url("../blocks/cards/__item/cards__item.css");
+@import url("../blocks/cards/__title/cards__title.css");
+@import url("../blocks/cards/__description/cards__description.css");
+
 @import url("../blocks/root/__link/root__link_transition_opacity.css");
+@import url("../blocks/rotation/rotation_360.css");

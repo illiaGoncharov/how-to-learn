@@ -4,6 +4,6 @@
   }
 }
 
-.header__square-pic_transition_360 {
+.rotation_360 {
   animation: rotate 20s linear infinite;
 }
