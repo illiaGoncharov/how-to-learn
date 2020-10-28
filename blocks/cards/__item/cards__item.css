@@ -1,6 +1,11 @@
 .cards__item {
   width: 240px;
   margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 60px;
 }
 
 .cards__item:nth-child(3n+3) {
