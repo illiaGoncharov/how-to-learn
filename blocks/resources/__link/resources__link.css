@@ -1,9 +1,6 @@
-.footer__column-link {
+.resources__link {
   text-decoration: none;
-  color: #fff;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
+  color: #2f80ed;
   z-index: 999;
   -webkit-transition: opacity .15s ease;
   -moz-transition: opacity .15s ease;
@@ -15,7 +12,7 @@
 
 }
 
-.footer__column-link:hover {
+.resources__link:hover {
   opacity: .65;
   filter: alpha(opacity=65); /* IE8 and lower */
   zoom: 1;/* Triggers "hasLayout" in IE 7 and lower */

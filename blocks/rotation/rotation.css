@@ -1,4 +1,8 @@
 @keyframes rotate {
+  20% {
+
+  }
+
   100% {
     transform: rotate(360deg);
   }
