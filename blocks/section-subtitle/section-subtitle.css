@@ -7,5 +7,6 @@
   font-weight: normal;
   line-height: 34px;
   text-align: center;
-  /*min-width: 920px;*/
+  position: relative;
+  z-index: 499;
 }
